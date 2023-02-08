@@ -20,6 +20,7 @@ class CachePageDecorator extends BaseCacheDecorator implements PageRepository
         parent::__construct();
         $this->entityName = 'pages';
         $this->repository = $page;
+        $this->cacheTime=60;
     }
 
     /**
